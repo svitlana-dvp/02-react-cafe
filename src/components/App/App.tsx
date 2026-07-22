@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Votes, VoteType } from '../../types/votes';
 import CafeInfo from '../CafeInfo/CafeInfo';
-import VoteOptions from '../VoteStats/VoteStats';
+import VoteOptions from '../VoteOptions/VoteOptions';
 import VoteStats from '../VoteStats/VoteStats';
 import Notification from '../Notification/Notification';
 import css from './App.module.css';
@@ -41,7 +41,7 @@ export default function App() {
           positiveRate={positiveRate}
         />
       ) : (
-        <Notification message="No feedback yet" />
+        <Notification />
       )}
     </div>
   );
