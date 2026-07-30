@@ -13,6 +13,7 @@ export default function App() {
     bad: 0,
   });
 
+  
   const handleVote = (type: VoteType) => {
     setVotes(prev => ({ ...prev, [type]: prev[type] + 1 }));
   };
